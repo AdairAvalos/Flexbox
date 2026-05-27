@@ -1,0 +1,164 @@
+.container {
+  display: flex;
+  justify-content: space-between; /* Empuja el logo a la izq y el div de la derecha al final */
+  background-color: rgb(144, 106, 219);
+  padding: 15px 50px;
+  color: white;
+}
+
+/* Este es el contenedor que creamos para los enlaces */
+.nav-links {
+  display: flex; /* Convierte los items de adentro en fila */
+  gap: 30px;     /* Separa los enlaces entre sí */
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;    /* Centra verticalmente */
+    justify-content: space-around; /* Espacio alrededor de los bloques */
+    padding: 50px 10%;      /* Márgenes laterales para que no toque las orillas */
+    gap: 40px;              /* Espacio entre el texto y la foto */
+}
+
+.hero-texto {
+    flex: 1;                /* Ocupa la mitad del espacio */
+}
+
+.hero-imagen {
+    flex: 1;                /* Ocupa la otra mitad */
+    text-align: right;
+}
+
+.hero-imagen img {
+    max-width: 100%;
+    border-radius: 15px;    /* Bordes redondeados como en tu imagen */
+}
+
+.botones{
+    .btn-primario { background-color: rgb(144, 116, 219); color: white; border: none; padding: 10px 25px; border-radius: 5px; }
+    .btn-secundario { border: 1px solid rgb(144, 116, 219); color: rgb(144, 116, 219); padding: 10px 25px; border-radius: 5px; background: transparent; }
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 30px; /* Espacio entre las tarjetas */
+    background-color: #f9f9f9; /* Un gris muy claro para diferenciar la sección */
+}
+
+.feature-card {
+    flex: 1; /* Esto hace que cada tarjeta ocupe 1/3 del espacio */
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-circle {
+    background-color: #e0d8f1; /* Color morado claro para el círculo */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto; /* Centra el círculo */
+    font-size: 24px;
+}
+
+.feature-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+/*productos*/
+.productos-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.titulo-productos {
+    font-size: 2rem;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+
+.linea-decorativa {
+    width: 120px;
+    height: 4px;
+    background-color: #9d81d6;
+    margin: 0 auto 40px auto;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas iguales */
+    gap: 25px; /* Espacio uniforme entre tus cuadros */
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s ease; /* Pequeña animación al pasar el mouse */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al tocar */
+}
+
+.card img {
+    width: 100%;
+    height: 280px; /* Altura fija para que todas las fotos se vean igual */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.card .precio {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card .descripcion {
+    font-size: 0.9rem;
+    color: #6a6a6a;
+    line-height: 1.4;
+}
+
+/*Pie de pagina*/
+
+.footer {
+    background-color: #1a1a1a; /* El color oscuro de tu imagen */
+    color: #ffffff;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between; /* Separa los 3 bloques a los extremos */
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px; /* Espacio entre los iconos */
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Ajuste opcional para el corazón */
+.footer-mensaje {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
